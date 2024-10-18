@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #000;
+}
+
+header {
+    background-color: #d4af37;
+    padding: 20px;
+    position: sticky;  /* Add this line */
+    top: 0;            /* Add this line */
+    z-index: 1000;     /* Add this line */
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+section {
+    padding: 40px;
+}
+
+.product {
+    margin: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.product img {
+    width: 200px;
+    height: auto;
+}
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.product {
+    background-color: #333;
+    border: 1px solid #d4af37;
+    border-radius: 8px;
+    margin: 20px;
+    padding: 20px;
+    width: 300px; /* Adjust width as needed */
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 100%; /* Makes image responsive */
+    height: auto;
+    border-radius: 5px;
+}
+
+#contact {
+    background-color: #333;
+    padding: 40px;
+    text-align: center;
+}
+
+#contact h2 {
+    color: #d4af37;
+}
+
+#contact p {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 90%; /* Adjust product width for smaller screens */
+    }
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #d4af37; /* Gold color for links */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #d4af37; /* Gold color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+}
+
+#backToTop:hover {
+    background-color: #fff; /* Change color on hover */
+    color: #d4af37; /* Change text color on hover */
+}
+
